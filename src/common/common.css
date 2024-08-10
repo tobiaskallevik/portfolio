@@ -1,0 +1,26 @@
+.navbar {
+    border-radius: 10rem;
+    height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    width: 18rem;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    position: fixed;
+    z-index: 999;
+    left: 50%;
+    top: 0;
+    margin-top: 3rem;
+    transform: translate(-50%, -50%);
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: blueviolet;
+}

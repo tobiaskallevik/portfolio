@@ -1,0 +1,60 @@
+.gradient-text {
+    background: linear-gradient(90deg, #0a84ff, #64d2ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.home-content {
+    text-align: left;
+    margin-left: 10rem;
+}
+
+.home-content hr {
+    width: 48vh;
+    border: 0.4vh solid #0a84ff;
+    border-radius: 10px;
+    margin-left: 0;
+}
+
+.home-content p {
+    font-size: 3vh;
+}
+
+.home-content h1 {
+    font-size: 7vh;
+}
+
+.link-container {
+    display: flex;
+}
+
+.link-container button {
+    background-color: transparent;
+    border: 0.2vh solid #ffffff;
+    height: 3rem;
+    width: 3rem;
+    padding: 0;
+    margin-right: 1rem;
+}
+
+@media (max-width: 766px) {
+    .home-content {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .home-content hr {
+        width: 15rem;
+        border: 3px solid #0a84ff;
+        margin: auto;
+    }
+
+}
