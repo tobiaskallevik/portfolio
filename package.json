@@ -9,12 +9,16 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d dist"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@lottiefiles/react-lottie-player": "^3.5.4",
+    "antd": "^5.20.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-lottie": "^1.2.4",
+    "react-typed": "^2.0.12"
   },
   "devDependencies": {
     "@eslint/js": "^9.8.0",
