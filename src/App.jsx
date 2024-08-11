@@ -4,12 +4,14 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Home from './home/home'
 import Navbar from './common/navbar'
+import { NavMobile } from './common/nav-mobile'
 
 function App() {
 
   return (
     <>
       <Navbar />
+      <NavMobile />
       
       <section id='home'> <Home /> </section>
       <section id='about'></section>

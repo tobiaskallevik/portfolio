@@ -24,3 +24,71 @@
 .navbar a:hover {
     color: blueviolet;
 }
+
+.nav-mobile {
+    position: fixed;
+    display: none;
+    z-index: 999;
+}
+
+.nav-mobile a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-mobile a:hover {
+    color: blueviolet;
+    transform: scale(1.2);
+}
+
+.nav-mobile hr {
+    width: 100%;
+}
+
+.nav-menu {
+    position: fixed;
+    left: -200%; 
+    right: 0;
+    top: 3.5rem;
+    transition: left 0.3s ease-in-out; 
+}
+
+.nav-menu.show {
+    left: 0; 
+}
+
+.nav-list {
+    padding: 1rem 1rem 1rem 1rem;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    margin: auto;
+    position: fixed;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem; 
+    /* background: linear-gradient(90deg, rgba(10, 132, 255, 0.6), rgba(100, 210, 255, 0.8)); */
+    background-color: rgba(10, 132, 255, 0.8);
+}
+
+.nav-item {
+    width: 90%;
+    border-radius: 0.5rem;
+    margin: auto;
+    align-items: center;
+    display: grid;
+    justify-content: center;
+    margin: 0.4rem;
+    
+}
+
+
+
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+
+    .nav-mobile {
+        display: inherit;
+    }
+}

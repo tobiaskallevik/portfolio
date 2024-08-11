@@ -10,47 +10,45 @@ export default function Home() {
 
   return (
     <div className='home'>
-      <Row>
-        <Col xs={24} md={12}>
-          <div className='home-content'>
-            <h1>
-              <span className='gradient-text'>Tobias</span> Kallevik
-            </h1>
-            <hr />         
-            <p>I am a passionate
+    
+          <div className='home-content-container'>
+            <div className='home-content'>
+              <h1>
+                <span className='gradient-text'>Tobias</span> Kallevik
+              </h1>
+              <hr />         
+              <p>I am a passionate&nbsp;
 
-              <ReactTyped
-                strings={[
-                  "student",
-                  "developer",
-                  "learner",
-              ]}
-              typeSpeed={60}
-              backSpeed={70}
-              backDelay={2000}
-              showCursor={false}
-              style={{ paddingLeft: '0.2rem', fontWeight: 'bolder' }}
-              loop
-              >
-            </ReactTyped>
-          </p>
-
-          <LinkGrid />
-
+                <ReactTyped
+                  strings={[
+                    "student",
+                    "developer",
+                    "learner",
+                  ]}
+                  typeSpeed={60}
+                  backSpeed={70}
+                  backDelay={2000}
+                  showCursor={false}
+                  style={{ fontWeight: 'bolder' }}
+                  loop
+                >
+                </ReactTyped>
+              </p>
+              <LinkGrid />
+            </div>
           </div>
-        </Col>
-        <Col xs={0} md={12}>
+
           <div className='home-animation'>
-          <Player
-              src={laptop}
-              background="transparent"
-              loop
-              autoplay
-              style={{ height: 'auto', width: '80vh' }}
-            />
+            <Player
+                src={laptop}
+                background="transparent"
+                loop
+                autoplay
+                className='laptop-animation'
+              />
           </div>
-        </Col>
-      </Row>
+    
+
       
     </div>
   ) 
