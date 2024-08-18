@@ -1,0 +1,38 @@
+{
+  "education": [
+    {
+      "degree": "Bachelor's Degree, Computer Software Engineering",
+      "description": "I am currently studying for a Bachelor's degree in Computer Software Engineering at the University of Agder. The program is a three-year program that focuses on software development, programming, and computer science. The program also includes subjects such as databases, web development, and software architecture.",
+      "endDate": "2025-06-01",
+      "institution": "University of Agder",
+      "location": "Grimstad, Norway",
+      "startDate": "2022-08-01"
+    }
+  ],
+  "work": [
+    {
+      "company": "UiA",
+      "description": "As a student assistant, my job involved helping students during lab hours, grading assignments, and creating course material. The course, Data Modeling and Databases (IKT105), aims to teach students about relational databases, SQL, and entity-relationship modeling.",
+      "endDate": "2024-05-31",
+      "location": "Grimstad, Norway",
+      "startDate": "2024-01-01",
+      "title": "Student Assistant"
+    },
+    {
+      "company": "UiA",
+      "description": "As a FYSE coach I work as a student mentor through UiA's First Year Study Environment. This arrangement means that all first-year students get an experienced student to guide them through their first semester. Here I hold weekly meetings where I help the students with subjects such as coding and mathematics. The training to become a FYSE mentor at UiA also involves a separate subject that goes through topics such as interpersonal skills, group management and study strategies.",
+      "endDate": "",
+      "location": "Grimstad, Norway",
+      "startDate": "2023-08-01",
+      "title": "Student Mentor"
+    },
+    {
+      "company": "Telenor Norge",
+      "description": "Worked as a summer temp in Telenor Kristiansand. Here I helped customers with everything from simple product questions to more complicated technical challenges related to Telenor's mobile and internet products. The role also involved sales of Telenor's products.",
+      "endDate": "2024-08-16",
+      "location": "Kristiansand, Norway",
+      "startDate": "2021-04-01",
+      "title": "Customer Service Representative"
+    }
+  ]
+}

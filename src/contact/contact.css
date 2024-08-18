@@ -1,0 +1,69 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.contact-form {
+    display: flex;
+    width: 40rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.87);
+    --dot-bg: #848282;
+    --dot-color: #161616;
+    --dot-size: 1px;
+    --dot-space: 1.5rem;
+    background:
+      linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+      linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+      var(--dot-color);
+    
+}
+
+/* contactForm.css */
+.ant-form-item-label > label {
+    font-size: 1.25rem !important;
+    font-weight: 500 !important;
+}
+
+.name-input, .email-input, .message-input {
+    width: 40rem !important;
+}
+
+.email-submit-btn {
+    width: 20rem;
+    margin-top: 1rem;
+    height: 3rem;
+    border-radius: 1rem;
+    background: #0a84ff;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-form {
+        width: 90%;
+    }
+
+    .name-input, .email-input, .message-input {
+        width: 80vw !important;
+    }
+
+    .ant-form-item-label > label {
+        color: white !important;
+      }
+
+    .email-submit-btn {
+        width: 10rem;
+    }
+
+    .contact-form {
+        background: transparent;
+    }
+
+}

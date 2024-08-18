@@ -1,0 +1,77 @@
+.experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 1000px;
+  max-width: 50%;
+  margin: auto;
+}
+
+.work-container, .education-container {
+    display: flex;
+    gap: 4rem;
+
+}
+
+.work-experience, .education-experience {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: auto;
+    box-sizing: border-box;
+    word-wrap: normal;
+}
+
+.work-header, .education-header {
+    display: flex;
+    min-width: 10%;
+}
+
+.work-experience h2, .education-experience h2 {
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+.work-company-dates, .education-instituion-dates {
+    margin-top: 0;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.work-header h2, .education-header h2 {
+    text-decoration: underline;
+    text-decoration-color: #0a84ff;
+    font-weight: 700;
+}
+
+.experience hr {
+    width: 100%;
+    border: 0.2vh solid #0a84ff;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 1020px) {
+    .experience {
+        min-width: 0;
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    .work-container, .education-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 0;
+
+    }
+
+    .work-experience, .education-experience {
+        text-align: center;
+    }
+
+    .work-header, .education-header {
+        flex-direction: column;
+    }
+}
