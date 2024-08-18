@@ -4,15 +4,18 @@ import { database } from '../firebase'
 import { ref, onValue } from "firebase/database";
 import WorkExperience from "./work";
 import Education from "./education";
+import Projects from "./projects";
 
 export default function Experience() {
   
   const [work, setWork] = useState([]);
   const [education, setEducation] = useState([]);
+  const [projects, setProjects] = useState([]);
 
   useEffect(() => {
     const workRef = ref(database, 'work');
     const educationRef = ref(database, 'education');
+    const projectsRef = ref(database, 'projects');
 
     const sortByEndDate = (a, b) => {
       const dateA = a.endDate ? new Date(a.endDate) : new Date();
@@ -31,6 +34,12 @@ export default function Experience() {
       const sortedEducationData = educationData.sort(sortByEndDate);
       setEducation(sortedEducationData);
     });
+
+    onValue(projectsRef, (snapshot) => {
+      const projectsData = snapshot.val();
+      setProjects(projectsData);
+    });
+
   }, []);
 
   return (
@@ -72,7 +81,24 @@ export default function Experience() {
 
         </div>
       </div>
-  
+      <hr />
+      <div className="project-container">
+        <div className="project-header">
+          <h2>Projects</h2>
+        </div>
+        <div className="projects">
+          {projects.map((project, index) => (
+            <Projects
+              key={index}
+              name={project.name}
+              description={project.description}
+              github={project.github}
+              technologies={project.technologies}
+            />
+          ))}
+        </div>
+
+      </div>
     </div>
     
   );

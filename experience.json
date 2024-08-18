@@ -34,5 +34,43 @@
       "startDate": "2021-04-01",
       "title": "Customer Service Representative"
     }
+  ],
+  "projects": [
+    {
+      "name": "Trainer Website",
+      "description": "Served as Scrum master and developer on a website project with 3 other students as part of UiA's Internet Services course. The website allowed users to create, share, log, and view statistics for workouts. They could also use our integration of OpenAI's chatGPT API to generate workouts.",
+      "technologies": [".Net", "C#", "SQLite", "Bootstrap", "jQuery"],
+      "github": "https://github.com/tobiaskallevik/trAIner"
+    },
+    {
+      "name": "Trainer App",
+      "description": "As part of UiA's Mobile Development course, I worked in a group of students to develop a mobile app version of the trainer website. The app also served as a refined version of the website, with a focus on mobile usability, performance and security.",
+      "technologies": ["React Native", "Firebase", "TypeScript", "Expo", "SQLite"],
+      "github": "https://github.com/tobiaskallevik/trAIner_mobile"
+    },
+    {
+      "name": "PlayPileup",
+      "description": "A proof of concept for a web-based game library collector, where users could add games from their different game libraries (Steam, Epic Games, etc.) and view them in one place. The backend of the project uses Django's DRF to provide REST API endpoints for the React-based frontend. Authentication is done using JWT.",
+      "technologies": ["Django", "React", "Python", "Javascript", "JWT"],
+      "github": "https://github.com/tobiaskallevik/playPileup"
+    },
+    {
+      "name": "Portfolio Website",
+      "description": "A personal portfolio website to showcase my projects, skills, and experience. The website is mainly built with React, but utilizes Firebase to streamline information retrieval and storage. GitHub pages are used for hosting.",
+      "technologies": ["React", "Firebase", "Vite", "GitHub Pages"],
+      "github": "https://github.com/tobiaskallevik/portfolio"
+    },
+    {
+      "name": "PopKernel OS",
+      "description": "32bit OS created as a project in the course Advanced Operating Systems at UiA. The OS is written in C/C++ and Assembly, and runs on a VM. The OS has memory management, ISRs and IRQs, PIT, keyboard input, and a simple shell. It includes different demo programs and tests to showcase the OS's capabilities. This includes a drawing program and a muisc player.",
+      "technologies": ["C", "C++", "Assambly"],
+      "github": "https://github.com/tobiaskallevik/2024-ikt218-osdev"
+    },
+    {
+      "name": "Smart Watch",
+      "description": "Smart watch project utilizing the STMICROELECTRONICS B-L475E-IOT01A1 development kit. Created as part of UiA's second semester exam project in the microcontroller course for computer engineering students. The watch can display time, date, temperature, and humidity, and includes functionality for changing the time zone. It also has the ability to set alarms, showcase the weather, and display an RSS feed.",
+      "technologies": ["C", "C++", "MBED"],
+      "github": "https://github.com/tobiaskallevik/Mbed-smart-watch"
+    }
   ]
 }

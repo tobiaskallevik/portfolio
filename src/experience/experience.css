@@ -9,13 +9,13 @@
   margin: auto;
 }
 
-.work-container, .education-container {
+.work-container, .education-container, .project-container {
     display: flex;
     gap: 4rem;
 
 }
 
-.work-experience, .education-experience {
+.work-experience, .education-experience, .projects {
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -24,23 +24,23 @@
     word-wrap: normal;
 }
 
-.work-header, .education-header {
+.work-header, .education-header, .project-header {
     display: flex;
     min-width: 10%;
 }
 
-.work-experience h2, .education-experience h2 {
+.work-experience h2, .education-experience h2, .projects h2 {
     margin-bottom: 0;
     font-weight: 700;
 }
 
-.work-company-dates, .education-instituion-dates {
+.work-company-dates, .education-instituion-dates, .project-technologies {
     margin-top: 0;
     font-weight: 500;
     font-style: italic;
 }
 
-.work-header h2, .education-header h2 {
+.work-header h2, .education-header h2, .project-header h2 {
     text-decoration: underline;
     text-decoration-color: #0a84ff;
     font-weight: 700;
@@ -60,18 +60,18 @@
         padding: 1rem;
     }
 
-    .work-container, .education-container {
+    .work-container, .education-container, .project-container {
         flex-direction: column;
         text-align: center;
         gap: 0;
 
     }
 
-    .work-experience, .education-experience {
+    .work-experience, .education-experience, .projects{
         text-align: center;
     }
 
-    .work-header, .education-header {
+    .work-header, .education-header, .project-header {
         flex-direction: column;
     }
 }
