@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://tobiaskallevik.github.io/portfolio/",
+  "homepage": "https://tobiaskallevik.github.io/personal_portfolio/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
