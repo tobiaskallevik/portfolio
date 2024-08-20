@@ -5,6 +5,7 @@ import './App.css'
 import Home from './home/home'
 import Contact from './contact/contact'
 import Experience from './experience/experience'
+import About from './about/about'
 import Navbar from './common/navbar'
 import { NavMobile } from './common/nav-mobile'
 
@@ -19,7 +20,7 @@ function App() {
       <NavMobile />
 
       <section id='home'> <Home /> </section>
-      <section id='about'></section>
+      <section id='about'> <About/> </section>
       <section id='experience'> <Experience/> </section>
       <section id='contact'><Contact /></section>
     </>

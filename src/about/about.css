@@ -1,0 +1,38 @@
+.about {
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.about-content {
+    display: grid;
+    grid-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    text-align: left;
+    margin-left: 10rem;
+}
+
+.about-animation {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+}
+
+@media screen and (max-width: 768px) {
+    .about {
+        grid-template-columns: 1fr;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .about-animation {
+        display: none;
+    }
+}
