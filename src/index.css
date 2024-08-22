@@ -2,7 +2,6 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   --dot-bg: #161616;
@@ -36,6 +35,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   overflow-x: hidden;
+  color: white;
 }
 
 h1 {
@@ -53,6 +53,7 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  color: white;
 }
 button:hover {
   border-color: #0a84ff;

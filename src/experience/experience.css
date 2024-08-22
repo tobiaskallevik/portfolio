@@ -57,7 +57,8 @@
     .experience {
         min-width: 0;
         max-width: 100%;
-        padding: 1rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
 
     .work-container, .education-container, .project-container {

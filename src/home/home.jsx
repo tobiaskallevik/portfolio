@@ -44,6 +44,7 @@ export default function Home() {
                 background="transparent"
                 loop
                 autoplay
+                length={1}
                 className='laptop-animation'
               />
           </div>
