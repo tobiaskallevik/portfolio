@@ -15,26 +15,21 @@
     padding: 2rem;
     border-radius: 8px;
     font-size: 1rem;
-    color: rgba(255, 255, 255, 0.87);
-    --dot-bg: #848282;
-    --dot-color: #161616;
-    --dot-size: 1px;
-    --dot-space: 1.5rem;
-    background:
-      linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
-      linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
-      var(--dot-color);
-    
 }
 
 /* contactForm.css */
 .ant-form-item-label > label {
     font-size: 1.25rem !important;
     font-weight: 500 !important;
+    color: white !important;
 }
 
 .name-input, .email-input, .message-input {
     width: 40rem !important;
+}
+
+.placeholder {
+    font-weight: 700 !important;
 }
 
 .email-submit-btn {

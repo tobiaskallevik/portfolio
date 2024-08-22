@@ -53,7 +53,7 @@ const ContactForm = () => {
           className='name-input'
           rules={[{ required: true, message: 'Please input your name!' }]}
         >
-          <Input name='from_name' size='large' placeholder='Your Name'/>
+          <Input name='from_name' size='large' placeholder='Your Name' className='placeholder'/>
         </Form.Item>
         <Form.Item
           layout="vertical"
@@ -62,7 +62,7 @@ const ContactForm = () => {
           className='email-input'
           rules={[{ required: true, message: 'Please input your email!' }]}
         >
-          <Input name="from-email" size="large" placeholder='Your email'/>
+          <Input name="from-email" size="large" placeholder='Your email' className='placeholder'/>
         </Form.Item>
         <Form.Item
           layout="vertical"
@@ -71,7 +71,7 @@ const ContactForm = () => {
           className='message-input'
           rules={[{ required: true, message: 'Please write your message!' }]}
         >
-          <TextArea name='message' size="large" rows={4} placeholder='Your message'/>
+          <TextArea name='message' size="large" rows={4} placeholder='Your message' className='placeholder'/>
         </Form.Item>
 
         <Form.Item>
