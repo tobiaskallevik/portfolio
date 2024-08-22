@@ -94,7 +94,7 @@ top: 1rem; */
 
 
 
-@media (max-width: 1250px) {
+@media screen and (max-aspect-ratio: 1/1) {
     .navbar {
         display: none;
     }

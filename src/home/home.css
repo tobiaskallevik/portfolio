@@ -9,7 +9,6 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 1rem;
 }
 
 .home-content-container  {
@@ -22,7 +21,9 @@
 }
 
 .home-content {
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
 }
 
 
@@ -74,12 +75,13 @@
     }
 }
 
-@media (max-width: 810px) {
+@media screen and (max-aspect-ratio: 1/1) {
     .home-content  {
         text-align: center;
         justify-content: center;
         align-items: center;
         margin: 0;
+        padding: 0;
 
     }
 
