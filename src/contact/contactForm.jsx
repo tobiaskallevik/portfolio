@@ -2,6 +2,7 @@ import React, {useRef} from 'react'
 import { Button, Form, Input, Radio, Tag } from 'antd';
 import TextArea from 'antd/es/input/TextArea';
 import emailjs from 'emailjs-com';
+import swal from 'sweetalert2';
 
 const ContactForm = () => {
 
@@ -23,12 +24,30 @@ const ContactForm = () => {
     )
     .then((result) => {
       console.log(result.text);
-      alert('Your message has been sent successfully');
-      localStorage.setItem('lastSentTime', currentTime);
-    }, (error) => {
+      swal.fire({
+        icon: 'success',
+        title: 'Email sent', 
+        timer: 2000,
+        toast: true,
+        position: 'top',
+        timerProgressBar: true, 
+        showConfirmButton: false
+      })
+    },
+    (error) => {
       console.log(error.text);
-      alert('There was an error sending your message');
+      swal.fire({
+        icon: 'error',
+        title: 'There was an error sending the email', 
+        timer: 2000,
+        toast: true,
+        position: 'top',
+        timerProgressBar: true, 
+        showConfirmButton: false
+      })
     });
+
+    form.reset();
   }
 
 
@@ -60,7 +79,10 @@ const ContactForm = () => {
           label="Email"
           name="from_email"
           className='email-input'
-          rules={[{ required: true, message: 'Please input your email!' }]}
+          rules={[
+            { required: true, message: 'Please input your email!' },
+            { pattern: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/, message: 'Invalid email format!' }
+          ]}
         >
           <Input name="from-email" size="large" placeholder='Your email' className='placeholder'/>
         </Form.Item>
