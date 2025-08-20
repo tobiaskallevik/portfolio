@@ -21,7 +21,7 @@
     {
       "company": "UiA",
       "description": "As a FYSE coach I work as a student mentor through UiA's First Year Study Environment. This arrangement means that all first-year students get an experienced student to guide them through their first semester. Here I hold weekly meetings where I help the students with subjects such as coding and mathematics. The training to become a FYSE mentor at UiA also involves a separate subject that goes through topics such as interpersonal skills, group management and study strategies.",
-      "endDate": "",
+      "endDate": "2025-01-31",
       "location": "Grimstad, Norway",
       "startDate": "2023-08-01",
       "title": "Student Mentor"
@@ -33,6 +33,22 @@
       "location": "Kristiansand, Norway",
       "startDate": "2021-04-01",
       "title": "Customer Service Representative"
+    },
+    {
+      "company": "Utel",
+      "description": "As a student intern at Utel, I worked alongside the development team to build backend systems using the Django framework. The primary focus of my internship was creating a message pipeline and notification system that alerts users about events in their telecom networks.",
+      "endDate": "2024-08-01",
+      "location": "Grimstad, Norway",
+      "startDate": "2024-11-30",
+      "title": "Student Intern"
+    },
+    {
+      "company": "Norkart",
+      "description": "As a system developer intern at Norkart, I had the pleasure of working on data gathering, data management, and both backend and frontend development for a system that explored data visualization and management of road data from the Norwegian Road Database (NVDB).",
+      "endDate": "2025-06-16",
+      "location": "Kristiansand, Norway",
+      "startDate": "2025-08-07",
+      "title": "System Developer"
     }
   ],
   "projects": [
