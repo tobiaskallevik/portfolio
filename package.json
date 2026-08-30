@@ -16,7 +16,6 @@
     "@lottiefiles/react-lottie-player": "^3.5.4",
     "antd": "^5.20.0",
     "date-fns": "^2.30.0",
-    "emailjs-com": "^3.2.0",
     "firebase": "^10.13.0",
     "framer-motion": "^11.3.24",
     "hamburger-react": "^2.5.1",
@@ -25,8 +24,7 @@
     "react-dom": "^18.3.1",
     "react-lottie": "^1.2.4",
     "react-typed": "^2.0.12",
-    "react-use": "^17.5.1",
-    "sweetalert2": "^11.12.4"
+    "react-use": "^17.5.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.8.0",

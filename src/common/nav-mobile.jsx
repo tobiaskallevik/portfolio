@@ -1,7 +1,7 @@
 import { useClickAway } from "react-use";
 import { useRef, useState } from "react";
 import { Squash as Hamburger } from "hamburger-react";
-import { HomeOutlined, UserOutlined, BulbOutlined, PhoneOutlined } from '@ant-design/icons';
+import { HomeOutlined, UserOutlined, BulbOutlined } from '@ant-design/icons';
 
 export const NavMobile = () => {
   const [isOpen, setOpen] = useState(false);
@@ -20,8 +20,6 @@ export const NavMobile = () => {
           <a href="#about">About</a>
           <hr />
           <a href="#experience">Experience</a>
-          <hr />
-          <a href="#contact">Contact</a>  
         </div>
       </div>
     </div>
