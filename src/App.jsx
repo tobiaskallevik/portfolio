@@ -7,20 +7,21 @@ import Experience from './experience/experience'
 import About from './about/about'
 import Navbar from './common/navbar'
 import { NavMobile } from './common/nav-mobile'
+import ErrorBoundary from './common/error-boundary'
 
 
 function App() {
 
 
-  
+
   return (
     <>
       <Navbar />
       <NavMobile />
 
-      <section id='home'> <Home /> </section>
-      <section id='about'> <About/> </section>
-      <section id='experience'> <Experience/> </section>
+      <section id='home'> <ErrorBoundary><Home /></ErrorBoundary> </section>
+      <section id='about'> <ErrorBoundary><About/></ErrorBoundary> </section>
+      <section id='experience'> <ErrorBoundary><Experience/></ErrorBoundary> </section>
     </>
   )
 }
