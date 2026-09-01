@@ -13,6 +13,8 @@ export default function Experience() {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
+    if (!database) return;
+
     const workRef = ref(database, 'work');
     const educationRef = ref(database, 'education');
     const projectsRef = ref(database, 'projects');
@@ -25,19 +27,17 @@ export default function Experience() {
 
     onValue(workRef, (snapshot) => {
       const workData = snapshot.val();
-      const sortedWorkData = workData.sort(sortByEndDate);
-      setWork(sortedWorkData);
+      setWork(Array.isArray(workData) ? [...workData].sort(sortByEndDate) : []);
     });
 
     onValue(educationRef, (snapshot) => {
       const educationData = snapshot.val();
-      const sortedEducationData = educationData.sort(sortByEndDate);
-      setEducation(sortedEducationData);
+      setEducation(Array.isArray(educationData) ? [...educationData].sort(sortByEndDate) : []);
     });
 
     onValue(projectsRef, (snapshot) => {
       const projectsData = snapshot.val();
-      setProjects(projectsData);
+      setProjects(Array.isArray(projectsData) ? projectsData : []);
     });
 
   }, []);
