@@ -8,7 +8,7 @@ const Projects = ({ name, description, github, technologies }) => {
     <div >
       <h2 className="project-title">{name}</h2>
       <p className="project-technologies">
-      <a href={github} target="_blank" rel="noopener noreferrer">GitHub</a> &#x2022; {technologies.join(', ')} 
+      {github && <><a href={github} target="_blank" rel="noopener noreferrer">GitHub</a> &#x2022; </>}{technologies.join(', ')}
       </p>
       <p className="project-description">{description}</p>
     </div>
